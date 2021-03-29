@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <DockerTargetOS>Linux</DockerTargetOS>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <NoWarn>1572;1573;1591;1701;1702;1705</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <NoWarn>1572;1573;1591;1701;1702;1705</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AlfaBank.AdApi.Kerberos" Version="0.3.2" />
+    <PackageReference Include="AlfaBank.Barcode" Version="0.5.0" />
+    <PackageReference Include="AlfaBank.Logging" Version="2.15.0" />
+    <PackageReference Include="AlfaBank.Services.Healthcheck" Version="1.1.2" />
+    <PackageReference Include="AlfaBank.SpringCloudConfig" Version="1.10.0" />
+    <PackageReference Include="AlfaBank.Swagger.Extensions" Version="1.8.1" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.4.1" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BP.Security\BP.Security.csproj" />
+    <ProjectReference Include="..\CashManagment.Application\CashManagment.Application.csproj" />
+    <ProjectReference Include="..\CashManagment.Infrastructure\CashManagment.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <Target Name="RestoreTools" BeforeTargets="Build">
+    <Exec Command="dotnet tool restore" />
+  </Target>
+
+</Project>

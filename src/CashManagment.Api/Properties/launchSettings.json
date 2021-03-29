@@ -1,0 +1,64 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": true,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:29460",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "PROJECT_KEY": "ufr-cashusrv",
+        "SYSLOG_PORT": "601",
+        "LOCAL": "true",
+        "HOST": "ufrmsdev1",
+        "SERVICE_NAME": "ufr-cashusrv-realcontainer-service",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "SrequestUsrv.Dev": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:29460",
+      "environmentVariables": {
+        "HOST": "ufrmsdev1",
+        "PROJECT_KEY": "ufr-srequestusrv",
+        "SERVICE_NAME": "ufr-srequestusrv-realcontainer-service",
+        "SYSLOG_PORT": "601",
+        "LOCAL": "true",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "CashUsrv.Dev": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:29460",
+      "environmentVariables": {
+        "HOST": "ufrmsdev1",
+        "PROJECT_KEY": "ufr-cashusrv",
+        "SERVICE_NAME": "ufr-cashusrv-realcontainer-service",
+        "SYSLOG_PORT": "601",
+        "LOCAL": "true",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "CashManagmentApi.Service": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:29460",
+      "environmentVariables": {
+        "HOST": "ufrmsdev1",
+        "PROJECT_KEY": "ufr-cashusrv",
+        "SERVICE_NAME": "ufr-cashusrv-realcontainer-service",
+        "SYSLOG_PORT": "601",
+        "LOCAL": "true",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SERVICE_HOST": "ufrmsdev1"
+      }
+    }
+  }
+}

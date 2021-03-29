@@ -1,0 +1,4 @@
+﻿language: C#
+repo_type: MicroService
+is_business_critical: true
+www_accessibility: false
